@@ -14,4 +14,4 @@ EXPOSE 8080
 CMD ["-jar", "spring-example.jar"]
 
 ENTRYPOINT ["/usr/local/bin/dumb-init", "java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-Xmx256m", "-Djava.security.egd=file:/dev/urandom"]
-COPY spring-example.jar spring-example.jar
+COPY /tmp/spring-example.jar spring-example.jar
