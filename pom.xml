@@ -66,4 +66,11 @@
 			<url>https://dl.bintray.com/atomist/atomist</url>
 		</repository>
   </repositories>
+  <distributionManagement>
+    <snapshotRepository>
+        <id>testshots</id>
+        <name>dozing-bee-artifactory-0.artifactory.default.svc.cluster.local-snapshots</name>
+        <url>https://192.168.99.100/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+</distributionManagement>
 </project>
