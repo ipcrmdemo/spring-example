@@ -1,4 +1,4 @@
-FROM openjdk:8-alpine
+FROM openjdk
 
 RUN wget -O /usr/local/bin/dumb-init https://github.com/Yelp/dumb-init/releases/download/v1.2.2/dumb-init_1.2.2_amd64 && \
 chmod 755 /usr/local/bin/dumb-init
